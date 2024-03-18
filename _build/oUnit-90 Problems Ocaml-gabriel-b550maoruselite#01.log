@@ -1,12 +1,12 @@
-2024-03-18T19:05:11+00:00 gabriel-b550maoruselite#01 I: Start test 90 Problems Ocaml:0:Problem 1 - Last element of a list.
-2024-03-18T19:05:11+00:00 gabriel-b550maoruselite#01 I: Test 90 Problems Ocaml:0:Problem 1 - Last element of a list is successful.
-2024-03-18T19:05:11+00:00 gabriel-b550maoruselite#01 I: End test 90 Problems Ocaml:0:Problem 1 - Last element of a list.
-2024-03-18T19:05:11+00:00 gabriel-b550maoruselite#01 I: Start test 90 Problems Ocaml:6:Problem 2 - Last two elements of an empty list.
-2024-03-18T19:05:11+00:00 gabriel-b550maoruselite#01 I: Test 90 Problems Ocaml:6:Problem 2 - Last two elements of an empty list is successful.
-2024-03-18T19:05:11+00:00 gabriel-b550maoruselite#01 I: End test 90 Problems Ocaml:6:Problem 2 - Last two elements of an empty list.
-2024-03-18T19:05:11+00:00 gabriel-b550maoruselite#01 I: Start test 90 Problems Ocaml:9:Problem 4 - Getting length of a list.
-2024-03-18T19:05:11+00:00 gabriel-b550maoruselite#01 I: Test 90 Problems Ocaml:9:Problem 4 - Getting length of a list is successful.
-2024-03-18T19:05:11+00:00 gabriel-b550maoruselite#01 I: End test 90 Problems Ocaml:9:Problem 4 - Getting length of a list.
-2024-03-18T19:05:11+00:00 gabriel-b550maoruselite#01 I: Start test 90 Problems Ocaml:12:Problem 6 - Checking if a list is palindrome - isn't.
-2024-03-18T19:05:11+00:00 gabriel-b550maoruselite#01 I: Test 90 Problems Ocaml:12:Problem 6 - Checking if a list is palindrome - isn't is successful.
-2024-03-18T19:05:11+00:00 gabriel-b550maoruselite#01 I: End test 90 Problems Ocaml:12:Problem 6 - Checking if a list is palindrome - isn't.
+2024-03-18T19:39:48+00:00 gabriel-b550maoruselite#01 I: Start test 90 Problems Ocaml:0:Problem 1 - Last element of a list.
+2024-03-18T19:39:48+00:00 gabriel-b550maoruselite#01 I: Test 90 Problems Ocaml:0:Problem 1 - Last element of a list is successful.
+2024-03-18T19:39:48+00:00 gabriel-b550maoruselite#01 I: End test 90 Problems Ocaml:0:Problem 1 - Last element of a list.
+2024-03-18T19:39:48+00:00 gabriel-b550maoruselite#01 I: Start test 90 Problems Ocaml:6:Problem 3 - Getting element by index out of range.
+2024-03-18T19:39:48+00:00 gabriel-b550maoruselite#01 I: Test 90 Problems Ocaml:6:Problem 3 - Getting element by index out of range is successful.
+2024-03-18T19:39:48+00:00 gabriel-b550maoruselite#01 I: End test 90 Problems Ocaml:6:Problem 3 - Getting element by index out of range.
+2024-03-18T19:39:48+00:00 gabriel-b550maoruselite#01 I: Start test 90 Problems Ocaml:8:Problem 5 - Reversing a list.
+2024-03-18T19:39:48+00:00 gabriel-b550maoruselite#01 I: Test 90 Problems Ocaml:8:Problem 5 - Reversing a list is successful.
+2024-03-18T19:39:48+00:00 gabriel-b550maoruselite#01 I: End test 90 Problems Ocaml:8:Problem 5 - Reversing a list.
+2024-03-18T19:39:48+00:00 gabriel-b550maoruselite#01 I: Start test 90 Problems Ocaml:12:Problem 8 - Removing consecutives duplicates.
+2024-03-18T19:39:48+00:00 gabriel-b550maoruselite#01 I: Test 90 Problems Ocaml:12:Problem 8 - Removing consecutives duplicates is successful.
+2024-03-18T19:39:48+00:00 gabriel-b550maoruselite#01 I: End test 90 Problems Ocaml:12:Problem 8 - Removing consecutives duplicates.

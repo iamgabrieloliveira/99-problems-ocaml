@@ -47,11 +47,16 @@ let rec compress = function
   | h :: (h' :: _ as t) -> if h = h' then compress t else h :: compress t
   | l -> l
 
-let contains list value =
-  let rec aux list' =
-    match list' with [] -> false | h :: t -> if h = value then true else aux t
+let pack list =
+  let rec aux list' acc current =
+    match list' with
+    | [] -> []
+    | [ x ] -> (x :: current) :: acc
+    | h :: (next :: _ as t) ->
+        if h = next then aux t acc (h :: current)
+        else aux t ((h :: current) :: acc) []
   in
-  aux list
+  List.rev @@ aux list [] []
 
 let assert_none value = assert_equal None value
 let assert_false value = assert_equal false value
@@ -85,8 +90,12 @@ let tests =
          ( "Problem 7 - Flatten an array" >:: fun _ ->
            assert_equal [ 1; 2; 3; 4; 5; 6 ]
              (flatten [ One 1; One 2; One 3; Many [ One 4; One 5; One 6 ] ]) );
-         ( "Problem 8 - Removing duplicates" >:: fun _ ->
+         ( "Problem 8 - Removing consecutives duplicates" >:: fun _ ->
            assert_equal [ 1; 2; 3; 4 ] (compress [ 1; 2; 2; 3; 3; 4; 4 ]) );
+         ( "Problem 9 - Group consecutives duplicates" >:: fun _ ->
+           assert_equal
+             [ [ 1 ]; [ 2; 2 ]; [ 3; 3 ]; [ 4; 4 ] ]
+             (pack [ 1; 2; 2; 3; 3; 4; 4 ]) );
        ]
 
 let _ = run_test_tt_main tests
