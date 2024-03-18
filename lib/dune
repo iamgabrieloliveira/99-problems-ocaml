@@ -1,0 +1,3 @@
+(library
+ (name ninety_nine_problems_ocaml)
+ (libraries ounit2))

@@ -1,0 +1,7 @@
+2024-03-18T18:05:04+00:00 gabriel-b550maoruselite#04 I: Start test test suite for sum:3:problem-4.
+2024-03-18T18:05:04+00:00 gabriel-b550maoruselite#04 E: Test test suite for sum:3:problem-4 has failed.
+2024-03-18T18:05:04+00:00 gabriel-b550maoruselite#04 E: not equal in test test suite for sum:3:problem-4.
+2024-03-18T18:05:04+00:00 gabriel-b550maoruselite#04 E: Raised at OUnitAssert.assert_failure in file "src/lib/ounit2/advanced/oUnitAssert.ml", line 45, characters 2-27
+2024-03-18T18:05:04+00:00 gabriel-b550maoruselite#04 E: Called from OUnitRunner.run_one_test.(fun) in file "src/lib/ounit2/advanced/oUnitRunner.ml", line 83, characters 13-26
+2024-03-18T18:05:04+00:00 gabriel-b550maoruselite#04 E: 
+2024-03-18T18:05:04+00:00 gabriel-b550maoruselite#04 I: End test test suite for sum:3:problem-4.

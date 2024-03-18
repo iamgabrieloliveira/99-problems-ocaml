@@ -1,0 +1,15 @@
+let rec last list = match list with
+| [] -> None
+| [x] -> Some x
+| _ :: t -> last t;;
+
+let assert_eq test_name ~given ~expected = 
+  if given == expected 
+  then Printf.sprintf ("Test passed: %s") test_name
+  else Printf.sprintf ("Test failed: %s failing assert that %s is equal to %s") test_name given expected
+
+let () = 
+  let ex1 = last [1;2;3;4;5] in
+
+  print_endline @@ string_of_int Option.value ex1
+  
