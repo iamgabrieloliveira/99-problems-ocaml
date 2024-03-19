@@ -58,6 +58,17 @@ let pack list =
   in
   List.rev @@ aux list [] []
 
+let run_length list =
+  let rec aux list' acc count =
+    match list' with
+    | [] -> acc
+    | [ x ] -> (count + 1, x) :: acc
+    | h :: (next :: _ as t) ->
+        if h = next then aux t acc (count + 1)
+        else aux t ((count + 1, h) :: acc) 0
+  in
+  List.rev @@ aux list [] 0
+
 let assert_none value = assert_equal None value
 let assert_false value = assert_equal false value
 let assert_true value = assert_equal true value
@@ -96,6 +107,10 @@ let tests =
            assert_equal
              [ [ 1 ]; [ 2; 2 ]; [ 3; 3 ]; [ 4; 4 ] ]
              (pack [ 1; 2; 2; 3; 3; 4; 4 ]) );
+         ( "Problem 10 - Run Length" >:: fun _ ->
+           assert_equal
+             [ (1, 1); (2, 2); (3, 3); (2, 4) ]
+             (run_length [ 1; 2; 2; 3; 3; 3; 4; 4 ]) );
        ]
 
 let _ = run_test_tt_main tests
